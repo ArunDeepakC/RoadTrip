@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            table, th, td {border: 1px solid black;
+                border-collapse: collapse;}
+            th, td {padding: 15px;}
+            th {font-weight:bold; text-align: left;}
+            </style>
+    </head>
+    <body>
+        <h1>Team 5 Service Directory</h1>
+        <table style="width:100%">
+        <tr>
+            <td colspan="5">&nbsp;Th web application is deployed at: <a href="http://webstrar5.fulton.asu.edu/page0/">http://webstrar5.fulton.asu.edu/page0/</a></td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;Percentage of contribution: Arun Deepak Chandrasekar: 50% and Rishti Gupta: 50%</td>
+        </tr>
+        <tr>
+        <th>Provider name</th>
+        <th>Page and Component Type</th>
+        <th>Component Description (Input/Output Parameters)</th>
+        <th>TryIt link</th>
+        <th>Actual resources and methods used to implement the components</th>
+        </tr>
+        
+        <tr>
+        <td>Arun Deepak Chandrasekar</td>
+        <td>DLL</td>
+        <td><b><u>Method:</u> Encrypt/Decrypt</b><br/>
+            <u>Input:</u> Plain/Encrypted String ( Type: String ) <br/> 
+            <u>Output:</u> Encrypted/Plain String ( Type: String )  <br/>
+            <u>Description:</u> A Dynamic Linked Library used in the main application. 
+            </td>
+        <td> <a href="http://webstrar5.fulton.asu.edu/page0/DLLEncryptTryIt.aspx">DLL TryIt Page</a></td>
+        <td>Implemented using the Encryption Decrytion Funstions.<br/> </td>       
+        </tr>
+        <tr>
+        <td>Arun Deepak Chandrasekar</td>
+        <td>Global.asax</td>
+        <td><b><u>Method:</u> Application_Start, Application_End, Application_BeginRequest</b></br>  
+            The event handlers which get triggered globally from the application context are implemnted as a part of these functions.</br> 
+    </td> 
+        <td><a href= "http://webstrar5.fulton.asu.edu/page0/GlobalTryIt.aspx">Global Event Handler TryIt Page</td>
+        <td>Implemented 3 global event handlers</td>
+        </tr>
+
+        <tr>
+            <td>Arun Deepak Chandrasekar</td>
+            <td>StaffLogin.aspx and server control</td>
+            <td>
+                <u>Description:</u>The aspx page that allows the staff to login into the web application. Please use "Staff Login" button to enter the login page.</td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page0/Staff/StaffLogin.aspx">Staff Login ASPX Page</a></td><br>
+            
+            <td>
+                Write my own code and use local components.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Arun Deepak Chandrasekar</td>
+            <td>StaffRegistration.aspx and server control</td>
+            <td>
+                <u>Description:</u>The aspx page that allows a new staff member to be registered into the web application.</td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page0/Staff/StaffRegistration.aspx">Staff Registration ASPX Page</a></td><br>
+            
+            <td>
+                Write my own code and use local components.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Arun Deepak Chandrasekar</td>
+            <td>Staff.aspx and server control</td>
+            <td>
+                <u>Description:</u>The aspx page that allows a staff member to register another staff into the web application.</td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page0/Protected/Staff.aspx">Staff ASPX Page</a></td><br>
+            
+            <td>
+                Write my own code and use local components.
+            </td>
+        </tr>
+
+        <tr>
+        <td>Arun Deepak Chandrasekar</td>
+        <td>Gas Station Service</td>
+        <td><u>Method:</u> GasStation<br>
+            <u>Input:</u> string address<br>
+            <u>Output: </u>List<string> list of gas station details in string format<br>
+            <u>Description:</u>The restful service takes address as input and returns details of nearby gas stations including gas station name, street address, fuel type eg. LPG, CNG, electric, station type eg. grocery store.</td>
+        <td><a href="http://webstrar5.fulton.asu.edu/page9/GasStationTryIt.aspx">Gas Station Service TryIt Page</a></td><br>
+        
+        <td>
+            <b><u>API Used:</u></b><br />   
+            1). Getting latitude and longitude from a given zip code: Geocoding API (Google) -<a href="https://console.cloud.google.com/ "> https://console.cloud.google.com/ </a><br />
+            2). Retrieve information from - <a href="https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/nearest"> https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/nearest/</a>
+        </td>
+        </tr>
+        
+        <td>Arun Deepak Chandrasekar</td>
+        <td>User Registration</td>
+        <td><u>Method:</u> registerUser, registerStaff<br>
+            <u>Input: (same for both methods)</u>(string username, string password)<br>
+            <u>Output:</u>boolean value representing whether registration was successful or not, boolean value representing whether registration was successful or not.
+            <u>Description:</u>The WSDL/SOAP service takes user name and password as input, and registers the users by storing user credentials in a XML file named Members.xml for member registration and Staff.xml for staff registration in the server.
+        </td>
+        <td><a href="http://webstrar5.fulton.asu.edu/page0/RegistrationServiceTryIt.aspx">Registration TryIt Page</a></td><br>
+        <td>
+            Write my own code and use local components.
+        </td>
+        </tr>
+
+        <td>Arun Deepak Chandrasekar</td>
+        <td>XML Manipulation - Implemented in User Registration Service</td>
+        <td><u>Method:</u> hasUser, hasStaff<br>
+            <u>Input: (same for both methods)</u>(string username, string password)<br>
+            <u>Output:</u>boolean value representing whether user credentials are present in Members.xml, boolean value representing whether user credentials are present in Staff.xml 
+            <u>Description:</u>The WSDL/SOAP service takes user name and password as input, and registers the users by storing user credentials in a XML file named Members.xml for member registration and Staff.xml for staff registration in the server.
+        </td>
+        <td><a href="http://webstrar5.fulton.asu.edu/page0/RegistrationServiceTryIt.aspx">XML Manipulation (Registration) TryIt Page</a></td><br>
+        <td>
+            Write my own code and use local components.
+        </td>
+        </tr>
+
+        <tr>
+            <td><b>(Collective Work) </b><br />Rishti Gupta & Arun Deepak Chandrasekar</td>
+            <td>Default.aspx and server control</td>
+            <td>
+                <u>Description:</u>The public default page that calls and links all other pages.</td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page0/">Default ASPX Page</a></td><br>
+            
+            <td>
+                Write my own code and use local components.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Rishti Gupta </td>
+            <td>UserControl (Image Verification)</td>
+            <td>
+                <u>Method:</u> Image Verification
+                <br />
+                <u>Input:</u> Length of the String ( Type: Integer )
+                <br />
+                <u>Output:</u> An image captcha is displayed for string verification which will be compared to the string entered by the user 
+                <u>Description:</u> Image verification User Control implemented for member and staff registration.
+            </td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page0/ImageVerificationUserControlTryIt.aspx">Image Verification TryIt Page </td>
+            <td>Using ASU Respository Image Verifier Service: <a href ="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?wsdl">http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?wsdl</a></td>
+        </tr>              
+    
+        <tr>
+        <td>Rishti Gupta</td>
+        <td>Cookies and Session</td>
+        <td>
+            <u>Method:</u> Clear Cookies and Sessions
+            <br />
+            <u>Description:</u>Clears the credentials from sessions and Cookies and redirects the user to the default page<br />
+        </td>
+        <td><a href="http://webstrar5.fulton.asu.edu/page0/ClearCookiesAndSessionsTryIt.aspx">Clear Cookies And Session TryIt Page </td>
+        <td>
+            Write my own code and use local components.
+        </td>
+        </tr>
+
+        <tr>
+            <td>Rishti Gupta</td>
+            <td>MemberLogin.aspx and server control</td>
+            <td>
+                <u>Description:</u>The aspx page that allows the member to login into the web application. Please use "Staff Login" button to enter the login page.</td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page0/Member/MemberLogin.aspx">Member Login ASPX Page</a></td><br>
+            
+            <td>
+                Write my own code and use local components.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Rishti Gupta</td>
+            <td>MemberRegistration.aspx and server control</td>
+            <td>
+                <u>Description:</u>The aspx page that allows a new member to be registered into the web application.</td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page0/Member/MemberRegistration.aspx">Member Registration ASPX Page</a></td><br>
+            
+            <td>
+                Write my own code and use local components.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Rishti Gupta</td>
+            <td>Member.aspx and server control</td>
+            <td>
+                <u>Description:</u>The aspx page that allows a  member to access the services provided by the web application.</td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page0/Protected/Staff.aspx">Member ASPX Page</a></td><br>
+            
+            <td>
+                Write my own code and use local components.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Rishti Gupta</td>
+            <td>Find Distance and Duration Service</td>
+            <td><u>Method:</u>findDistanceAndDuration<br>
+                <u>Input:</u>Address/zip for origin and destination<br>
+                <u>Output:</u>Distance and Travel Duration between between origin and destination<br>
+                <u>Description:</u>Get the distance and travel duration between the origin and destination by taking in either the address or zip code of origin and destination.
+            </td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page8/FindDistanceAndDuration.aspx">Find Distance and Duration TryIt Page</a></td><br>
+            <td>
+                <b><u>API Used:</u></b><br />   
+                1). Getting latitude and longitude from a given zip code: Geocoding API (Google) -<a href="https://console.cloud.google.com/ "> https://console.cloud.google.com/ </a><br />
+                2). Getting the distance and travel duration information from Distance Matrix Google API: - <a href="https://console.cloud.google.com/">https://console.cloud.google.com/</a>
+            </td>
+            </tr>
+            <td>Rishti Gupta</td>
+            <td>Get Weather Conditions</td>
+            <td><u>Method:</u>getLocationDetails<br>
+                <u>Input:</u>a U.S. zip code<br>
+                <u>Output:</u>An array (or list) of strings, storing 5-day weather forecast for the given zip code location<br>
+                <u>Description:</u>Get a 5-day weather forecast service of zip code location
+            </td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page8/WeatherConditions.aspx">Get Weather Conditions TryIt Page</a></td><br>
+            <td>
+                Retrieve information from:<br />
+                <a href="https://openweathermap.org/api"> https://openweathermap.org/api</a>
+            </td>
+            </tr>
+            <tr>
+            <td>Rishti Gupta</td>
+            <td>Find the Nearest Store Service</td>
+            <td><u>Method:</u> findNearestStore<br>
+                <u>Input:</u>string (zipcode), string (storeName)<br>
+                <u>Output:</u>string
+                <u>Description:</u>Find the provided storeName closest to the zip code and return the address. If no store is found, return an error message
+            </td>
+            <td><a href="http://webstrar5.fulton.asu.edu/page8/NearestStores.aspx">Find Nearest Stores TryIt Page</a></td><br>
+            <td>
+                <b><u>API Used:</u></b><br />   
+                1). Getting latitude and longitude from a given zip code: Geocoding API (Google) - <a href="https://console.cloud.google.com">https://console.cloud.google.com</a><br />
+                2). Getting the address of the nearest store taking the store name as the parameter: Google Places API- <a href="https://console.cloud.google.com"> https://console.cloud.google.com/</a>
+            </td>
+            </tr>
+        
+
+  </table>
+  </body>
+  </html>

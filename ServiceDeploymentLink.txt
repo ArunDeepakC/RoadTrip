@@ -1,0 +1,8 @@
+TEAM-5 (CSE-445 Project 5)
+
+Members:
+1. Arun Deepak Chandrasekar- 1217200647 (ASU ID)
+2. Rishti Gupta- 1217211814 (ASU ID)
+
+Service Directory deployed at: http://webstrar5.fulton.asu.edu/index.html
+The web application page is deployed at: http://webstrar5.fulton.asu.edu/page0/
